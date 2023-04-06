@@ -180,21 +180,5 @@ app.put('/product/:id', (req, res) => {
     });
   });
   
-// app.put('/product/:id', (req, res) => {
-//     const id = req.params.id;
-//     const { name, price } = req.body;
-//     const productIndex = products.findIndex(product => product.id === id);
-    
-//     if (productIndex === -1) {
-//       res.status(404).send('Product not found');
-//     } else {
-//       const updatedProduct = {
-//         id,
-//         name: name || products[productIndex].name,
-//         price: price || products[productIndex].price
-//       };
-//       products[productIndex] = updatedProduct;
-//       res.send(updatedProduct);
-//     }
-//   });
+
   
